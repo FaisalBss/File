@@ -2,7 +2,7 @@
 
 $file = "Faisal.txt";
 
-if (is_writable($file)){
+if (file_exists($file)){
     
     echo 'Good the [ '. $file . ' ] is found';
     file_put_contents($file,'this file got changed');
