@@ -2,7 +2,7 @@
 
 $name = 'Faisal';
 
-if (file_exists($name)) {
+if (is_dir($name)) {
    
     rmdir($name);
     echo'file already exists but I deleted it and recreate it';
