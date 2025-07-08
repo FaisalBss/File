@@ -1,0 +1,15 @@
+<?php 
+
+$name = 'Faisal';
+
+if (file_exists($name)) {
+   
+    rmdir($name);
+    echo'file already exists but I deleted it and recreate it';
+    mkdir($name);
+} else {
+
+    mkdir($name);
+
+    echo "The Diractory $name was not found but I created";
+}
